@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .led-glow {
+    box-shadow: 0 0 12px rgba(0, 255, 170, 0.7);
+  }
+  .led-cyan {
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.7);
+  }
+  .led-pink {
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.7);
+  }
+  .plugin-panel {
+    background: linear-gradient(135deg, rgba(16, 23, 38, 0.95), rgba(10, 14, 23, 0.98));
+    backdrop-filter: blur(12px);
+  }
+  .knob-track {
+    background: radial-gradient(circle, #101726 0%, #05070c 100%);
+  }
+  .screen-display {
+    background: radial-gradient(circle at center, #0a1120 0%, #030407 100%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #05070c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffaa;
+}
+
+.floating-window {
+  position: fixed;
+  z-index: 60;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(0, 255, 170, 0.35);
+  min-width: 320px;
+  min-height: 240px;
+  max-width: 95vw;
+  max-height: 90vh;
+}
+
+.window-header {
+  cursor: grab;
+}
+.window-header:active {
+  cursor: grabbing;
+}
+

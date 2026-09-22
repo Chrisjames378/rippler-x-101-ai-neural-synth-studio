@@ -1,0 +1,6 @@
+{
+  "name": "RIPPLER x 101 AI Neural Synth Studio",
+  "description": "Pro DAW v6.0 featuring 101 AI neural synth models, 32-step sequencer, WebMIDI HUD, AI stem separator, cloud backup, and AI track composer.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
